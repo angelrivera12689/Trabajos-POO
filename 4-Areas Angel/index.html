@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geometricas</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="boostrap/bootstrap-5.3.2-dist/css/bootstrap.css">
+</head>
+<body>
+
+    <br><br><br>
+
+ <!-- formulario -->
+ <div class="formulario">
+    <div class="container text-center">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <div class="formulario-figura">
+                <form action="" id="formulario_figura" method="post">
+                    <div class="titulo">
+                        <h2>Calcular áreas de figuras</h2>
+                        <hr style="border: solid 2px; top: 12px;">
+                        <p>En este formulario ingrese la figura que quiere calcular el área</p>
+                    </div>
+                    <div class="opciones">
+                        <h5>Elige la figura geométrica a calcular:</h5>
+                        <select name="figuras" id="seleccion-figura">
+                            <option value=""></option>
+                            <option value="cuadrado">Cuadrado</option>
+                            <option value="triangulo">Triángulo</option>
+                            <option value="rectangulo">Rectángulo</option>
+                        </select>
+                    </div>
+
+                    <div class="lados">
+                        <div id="dato-1">
+                            <h4>Base:</h4>  
+                            <div id="inputs">
+                                <input type="number" id="base" min="0" name="lado1">     
+                            </div>  
+                        </div>
+                        <div id="dato-2">
+                            <h4>Altura:</h4>  
+                            <div id="inputs">
+                                <input type="number" id="altura" min="0" name="lado2">     
+                            </div>  
+                        </div>
+                        <input id="boton-calcular" type="submit" name="boton-cal">
+                    </div>
+
+                    <div id="mostrar-resultado">
+                        <div id="imagen-figura"></div>
+                        <div id="mostrar"></div>
+                    </div>
+                </form>
+            </div>
+          </div>
+          <div class="col"></div>
+        </div>
+    </div>
+</div>
+
+ <!-- /formulario -->
+
+
+
+
+    <script src="JS/index.js"></script>
+    <script src="boostrap/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+</body>
+</html>

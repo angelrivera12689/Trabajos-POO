@@ -1,0 +1,90 @@
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.formulario-figura {
+    border: solid 7px rgb(58, 13, 237);
+    width: 600px;
+    height: auto; /* Cambiado a auto para adaptarse al contenido */
+    padding: 30px; /* Aumentado el padding */
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+}
+
+.titulo p {
+    text-align: center; /* Centrado del texto */
+    font-size: large;
+}
+
+.opciones h5 {
+    margin-top: 10px; /* Ajustado */
+    margin-bottom: 12px;
+    border: solid black;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    text-align: center; /* Centrar el texto */
+}
+
+.opciones select {
+    width: 100%; /* Ancho completo */
+    height: 40px; /* Altura ajustada */
+    padding: 8px; /* Espaciado */
+    border: solid rgb(66, 14, 237);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.opciones select:hover {
+    background-color: #f6f5f1; /* Color de fondo al pasar el cursor */
+}
+
+.lados {
+    margin-top: 12px;
+}
+
+/* Agrupando las etiquetas e inputs */
+.lados #dato {
+    display: flex; /* Usando flexbox para alinear */
+    flex-direction: column; /* Apilando etiquetas sobre inputs */
+    align-items: center; /* Centrando los elementos horizontalmente */
+    margin-bottom: 12px; /* Margen inferior entre conjuntos */
+}
+
+.lados #inputs input {
+    margin-top: 5px; /* Espacio entre etiqueta y input */
+    border: solid 3px rgb(49, 14, 226);
+    border-radius: 5px; /* Suavizando las esquinas */
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    color: rgb(0, 0, 0); /* Color del texto */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+#imagen-figura img {
+    margin-top: 20px; /* Espacio superior ajustado */
+    width: 150px;
+    height: 150px;
+}
+
+#boton-calcular {
+    width: 120px;
+    height: 50px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px; /* Espacio superior */
+    background-color: rgb(58, 13, 237); /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+/* Cambia el color del botón al pasar el cursor */
+#boton-calcular:hover {
+    background-color: rgb(40, 9, 169); /* Color más oscuro */
+}
